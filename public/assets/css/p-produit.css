@@ -1,0 +1,119 @@
+.erudit-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 30px -3px rgba(16, 66, 97, .08);
+    padding: 30px;
+    position: relative;
+    border: none;
+    height: 100%;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: 'gilroy-regular', arial, sans-serif;
+    color: #B0B0B0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.pricing-erudit {
+    color: #42baf4;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    color: #404040;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 24px;
+}
+
+.erudit-p{
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+select {
+    color: rgba(52, 61, 72, .4);
+    font-size: 14px;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+input {
+    color: rgba(52, 61, 72, .4);
+    font-size: 14px;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+.erudit-checkbox {
+    color: rgba(52, 61, 72, .4);
+    font-size: 4px;
+    height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-top: 24px;
+    left: 10px;
+}
+
+.erudit-service {
+    margin-top: -5px;
+    color: #0093D2;
+    line-height: initial;
+}
+
+.erudit-add-pricing {
+    color: #42baf4;
+}
+
+label {
+    color: #343d48;
+    cursor: pointer;
+}
+
+.erudit-ligne {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.erudit-titre {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 700!important;
+    color: #343d48;
+    font-size: 24px;
+}
+
+.img-erudit {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 30px -3px rgba(16, 66, 97, .08);
+    height: 100%;
+}
+
+.erudit-space {
+    width: 0px;
+    height: 50px;
+}
+
+.erudit-space-25{
+    width: 0px;
+    height: 25px;
+}
+
+h4{
+    font-size: 20px;
+    color: #404040;
+    font-family: 'gilroy-bold', arial, sans-serif;
+    text-transform: initial;
+    font-weight: 400;
+}
+
+.erudit-center{
+    
+}
+

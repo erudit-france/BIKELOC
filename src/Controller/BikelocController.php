@@ -13,8 +13,22 @@ class BikelocController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('bikeloc/index.html.twig', [
-            'controller_name' => 'BikelocController',
-        ]);
+        return $this->render('bikeloc/index.html.twig');
+    }
+
+    /**
+     * @Route("/Vehicules", name="Vehicules")
+     */
+    public function vehicules()
+    {
+        return $this->render('bikeloc/Vehicules.html.twig');
+    }
+
+        /**
+     * @Route("/produit", name="produit")
+     */
+    public function produit()
+    {
+        return $this->render('bikeloc/produit.html.twig');
     }
 }

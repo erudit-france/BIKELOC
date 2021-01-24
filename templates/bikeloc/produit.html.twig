@@ -1,0 +1,165 @@
+{% extends 'base.html.twig' %}
+{% block cssSpe %}
+<link rel="stylesheet" href="{{ asset('/assets/css/p-produit.css') }}">
+{% endblock %}
+{% block body %}
+<div class="simple-page ftco-degree-bg"></div>
+<section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 erudit-card">
+                <div class="row">
+                    <h5 class="col-12">À partir de</h5>
+                    <h3 class="col-12 pricing-erudit">69,00 €</h3>
+                    <p class="col-12">Départ de la location</p>
+                    <select onchange name="type" class="col-12" id="type">
+                        <option value="0">Agence Gare de Lyon</option>
+                    </select>
+                    <p class="col-12">Retour de la location</p>
+                    <select onchange name="type" class="col-12" id="type">
+                        <option value="0">Agence Gare de Lyon</option>
+                    </select>
+                    <p class="col-12">Date & heure de la prise en charge</p>
+                    <input class="col-6" type="date" id="start" name="trip-start" value="2018-07-22" min="2021-01-24"
+                        max="2021-02-31">
+                    <div class="col-1"></div>
+                    <input class="col-5" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                    <p class="col-12">Date & heure de retour</p>
+                    <input class="col-6" type="date" id="start" name="trip-start" value="2018-07-22" min="2021-01-24"
+                        max="2021-02-31">
+                    <div class="col-1"></div>
+                    <input class="col-5" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Livraison" name="Livraison">
+                    <label class="col-11" style="margin-top: 21px;" for="Livraison">Livraison et récupration du
+                        véhicule</label>
+                    <p class="col-12 erudit-service">Bikeloc propose un service de livraison et de récupération du
+                        véhicule sur Paris
+                    </p>
+                    <div class="col-12 erudit-ligne"></div>
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Accessoires" name="Accessoires">
+                    <label class="col-11" style="margin-top: 21px;" for="Accessoires">Accessoires inclus (Casque,
+                        Gants, Antivol) <br />
+                        <span class="erudit-add-pricing">0,00 €- Par Jour</span>
+                    </label>
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Equipement-casque"
+                        name="Equipement-casque">
+                    <label class="col-11" style="margin-top: 21px;" for="Equipement-casque">Équipement supplémentaire 1
+                        Casque<br />
+                        <span class="erudit-add-pricing">5,00 €- Une Fois</span>
+                    </label>
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Equipement-gants" name="Equipement-gants">
+                    <label class="col-11" style="margin-top: 21px;" for="Equipement-gants">Équipement supplémentaire 1
+                        Paire de gants<br />
+                        <span class="erudit-add-pricing">5,00 €- Une Fois</span>
+                    </label>
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Kilometrage" name="Kilometrage">
+                    <label class="col-11" style="margin-top: 21px;" for="Kilometrage">Kilométrage illimité<br />
+                        <span class="erudit-add-pricing">11,00 €- Par Jour</span>
+                    </label>
+                    <input class="col-1 erudit-checkbox" type="checkbox" id="Smartphone" name="Smartphone">
+                    <label class="col-11" style="margin-top: 21px;" for="Smartphone">Support Smartphone<br />
+                        <span class="erudit-add-pricing">5,00 €- Une Fois</span>
+                    </label>
+                    <div class="col-12 erudit-ligne"></div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <img class="col-12 img-erudit"
+                        src="https://bikeloc.fr/wp-content/uploads/2020/07/2020-yam-mt07tr-eu-mbnm3-stu-001-03.jpg"
+                        alt="img">
+                    <h2 class="col-12 erudit-titre">MT 07 Tracer 700CC 2020 – La routière sportive</h2>
+                    <div class="col-12 erudit-ligne"></div>
+                    <div class="col-12 erudit-space"></div>
+                    <h4 class="col-12">Caractéristiques</h4>
+                    <div class="col-12 erudit-space-25"></div>
+                    <p class="col-6 erudit-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg> Age requis: 20 ans mini.</p>
+                    <p class="col-6 erudit-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg> Année: 2020</p>
+                    <p class="col-6 erudit-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg> Cylindré: 700cc</p>
+                    <p class="col-6 erudit-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg> Permis A2 (mini. 1 jour de permis)</p>
+                    <p class="col-6 erudit-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg> Places: 2 personnes</p>
+                    <div class="col-12 erudit-space"></div>
+                    <h2 class="col-12 erudit-titre">TRACER 700, la moto Touring la plus populaire.</h2>
+                    <p class="col-12">Bikeloc vous propose en exclusivité à la location la toute dernière nouveauté de
+                        chez le constructeur Yamaha: le MT07 Tracer 700 (A2) 2020.
+                        Voici la petite sœur de la célèbre TRACER 900.
+                        Cette moto est une invitation au voyage pour chacun d’entre vous. Polyvalente, elle saura
+                        convenir à votre profil de pilote.
+                        L’emblématique Trail de la marque s’est offert une beauté, encore plus agile, plus équipé et ses
+                        courbes repensées, cette moto vous garantira encore plus de sensation et de plaisir à la
+                        conduite, en ville comme en périphérie
+                        Idéal pour les permis A2 comme les permis A, vos émotions seront donc uniques avec ce roadster
+                        entre vos mains.
+                        Moto joueuse, vous aurez le sourire à chaque sortie.</p>
+                    <div class="col-12 erudit-space-25"></div>
+                    <h2 class="col-12 erudit-titre">Design du Tracer 700 2020 :</h2>
+                    <p class="col-12">La TRACER 700 reprend toutes les qualités de la MT 07 classique, son moteur est
+                        similaire. Ainsi, vous disposez alors de toute sa technique.
+
+                        Son look agressif a été gardé pour des courbes un peu plus raffinées, taillée dans la masse du
+                        carénage. Un tableau de bord numérique intégré, une série d’équipement au top de l’innovation et
+                        du confort du conducteur. Un ABS de série et un système d’amortissement toujours aussi agréable.
+
+                        De plus, son réservoir contient désormais 17 litres, c’est une contenance largement supérieure
+                        aux versions antérieures de ce modèle.
+
+                        En effet, si vous êtes accompagné, votre passager(e) et vous-même seraient totalement à l’aise
+                        grâce à la selle biplace à deux niveaux. Cela même sur les longs trajets.
+
+                        Le passager peut s’accrocher aux poignées prévues à cet effet.</p>
+                    <div class="col-12 erudit-space-25"></div>
+                    <h2 class="col-12 erudit-titre">La TRACER 700 vous promet vivacité, intensité et fougue.</h2>
+                    <p class="col-12">Avec cette moto, vous serez à la fois à l’aise en ville ou sur les routes plus
+                        campagnardes.
+
+                        La moto parfaite pour partir en road-trip.
+
+                        En conclusion, elle vous promet un amusement lors de son pilotage tout comme une rigueur de
+                        conduite exceptionnelle.</p>
+                    <div class="col-12 erudit-space-25"></div>
+                    <h2 class="col-12 erudit-titre">La TRACER 700 vous promet vivacité, intensité et fougue.</h2>
+                    <p class="col-12">Avec cette moto, vous serez à la fois à l’aise en ville ou sur les routes plus
+                        campagnardes.
+
+                        La moto parfaite pour partir en road-trip.
+
+                        En conclusion, elle vous promet un amusement lors de son pilotage tout comme une rigueur de
+                        conduite exceptionnelle.</p>
+
+                </div>
+            </div>
+            <div class="col-12 erudit-ligne"></div>
+            <div class="col-12 erudit-space"></div>
+            <h1 class="col-12 pricing-erudit d-flex justify-content-center">Autres véhicules</h1>
+            <div class="col-12 erudit-space"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
