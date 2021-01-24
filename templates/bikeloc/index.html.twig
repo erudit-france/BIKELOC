@@ -1,0 +1,211 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+		<!-- END nav -->
+
+		<div class="hero-wrap ftco-degree-bg" style="background-image: url('{{ asset('/assets/images/bg_1.jpg') }}');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+					<div class="col-lg-8 ftco-animate">
+						<div class="text w-100 text-center mb-md-5 pb-md-5">
+							<h1 class="mb-4">Un moyen rapide et facile de location de scooter et moto</h1>
+							<a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#42baf4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg>
+								</div>
+								<div class="heading-title ml-5">
+									<span>Faciles et rapides choisissez le meilleur.</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="ftco-section ftco-no-pt bg-light">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-12	featured-top">
+						<div class="row no-gutters">
+							<div class="col-md-4 d-flex align-items-center">
+								<form action="#" class="request-form ftco-animate bg-primary">
+									<h2>Location de scooter et moto</h2>
+									<div class="form-group">
+										<label for="" class="label">LIEU DE RAMASSAGE</label>
+										<input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+									</div>
+									<div class="form-group">
+										<label for="" class="label">POINT DE CHUTE</label>
+										<input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+									</div>
+									<div class="d-flex">
+										<div class="form-group mr-2">
+											<label for="" class="label">DATE DE RAMASSAGE</label>
+											<input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+										</div>
+										<div class="form-group ml-2">
+											<label for="" class="label">DATE DE RETOUR</label>
+											<input type="text" class="form-control" id="book_off_date" placeholder="Date">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="label">HEURE DE RAMASSAGE</label>
+										<input type="text" class="form-control" id="time_pick" placeholder="Time">
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Louez un véhicule maintenant" class="btn btn-secondary py-3 px-4">
+									</div>
+								</form>
+							</div>
+							<div class="col-md-8 d-flex align-items-center">
+								<div class="services-wrap rounded-right w-100">
+									<h3 class="heading-section mb-4">Meilleure façon de louer vos véhicule parfait</h3>
+									<div class="row d-flex mb-4">
+										<div class="col-md-4 d-flex align-self-stretch ftco-animate">
+											<div class="services w-100 text-center">
+												<div class="icon d-flex align-items-center justify-content-center">
+													<img style="width: 100px;" src="{{ asset('/assets/imagesBIKELOC/icon-shipping.png') }}">
+												</div>
+												<div class="text w-100">
+													<h3 class="heading mb-2">Service de livraison et de récupération du véhicule</h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 d-flex align-self-stretch ftco-animate">
+											<div class="services w-100 text-center">
+												<div class="icon d-flex align-items-center justify-content-center">
+													<img style="width: 100px;" src="{{ asset('/assets/imagesBIKELOC/icon-accessoires.png') }}">
+												</div>
+												<div class="text w-100">
+													<h3 class="heading mb-2">Accessoires inclus pour chaque location de véhicule</h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 d-flex align-self-stretch ftco-animate">
+											<div class="services w-100 text-center">
+												<div class="icon d-flex align-items-center justify-content-center">
+													<img style="width: 100px;" src="{{ asset('/assets/imagesBIKELOC/icon-vehicle.png') }}">
+												</div>
+												<div class="text w-100">
+													<h3 class="heading mb-2">Véhicules récents pour un service de qualité</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p>
+										<a href="#" class="btn btn-primary py-3 px-4">Réservez votre véhicule de location</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="ftco-section ftco-no-pt bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+						<span class="subheading">What we offer</span>
+						<h2 class="mb-2">Bestsellers</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel-car owl-carousel">
+							<div class="item">
+								<div class="car-wrap rounded ftco-animate">
+									<div class="img rounded d-flex align-items-end" style="background-image: url({{ asset('/assets/images/car-1.jpg') }});"></div>
+									<div class="text">
+										<h2 class="mb-0">
+											<a href="#">Mercedes Grand Sedan</a>
+										</h2>
+										<div class="d-flex mb-3">
+											<span class="cat">Cheverolet</span>
+											<p class="price ml-auto">$500
+												<span>/day</span>
+											</p>
+										</div>
+										<p class="d-flex mb-0 d-block">
+											<a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
+											<a href="#" class="btn btn-secondary py-2 ml-1">Details</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="car-wrap rounded ftco-animate">
+									<div class="img rounded d-flex align-items-end" style="background-image: url({{ asset('/assets/images/car-2.jpg') }});"></div>
+									<div class="text">
+										<h2 class="mb-0">
+											<a href="#">Mercedes Grand Sedan</a>
+										</h2>
+										<div class="d-flex mb-3">
+											<span class="cat">Cheverolet</span>
+											<p class="price ml-auto">$500
+												<span>/day</span>
+											</p>
+										</div>
+										<p class="d-flex mb-0 d-block">
+											<a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
+											<a href="#" class="btn btn-secondary py-2 ml-1">Details</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="car-wrap rounded ftco-animate">
+									<div class="img rounded d-flex align-items-end" style="background-image: url({{ asset('/assets/images/car-3.jpg') }});"></div>
+									<div class="text">
+										<h2 class="mb-0">
+											<a href="#">Mercedes Grand Sedan</a>
+										</h2>
+										<div class="d-flex mb-3">
+											<span class="cat">Cheverolet</span>
+											<p class="price ml-auto">$500
+												<span>/day</span>
+											</p>
+										</div>
+										<p class="d-flex mb-0 d-block">
+											<a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
+											<a href="#" class="btn btn-secondary py-2 ml-1">Details</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="car-wrap rounded ftco-animate">
+									<div class="img rounded d-flex align-items-end" style="background-image: url({{ asset('/assets/images/car-4.jpg') }});"></div>
+									<div class="text">
+										<h2 class="mb-0">
+											<a href="#">Mercedes Grand Sedan</a>
+										</h2>
+										<div class="d-flex mb-3">
+											<span class="cat">Cheverolet</span>
+											<p class="price ml-auto">$500
+												<span>/day</span>
+											</p>
+										</div>
+										<p class="d-flex mb-0 d-block">
+											<a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
+											<a href="#" class="btn btn-secondary py-2 ml-1">Details</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+{% endblock %}
