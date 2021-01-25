@@ -63,6 +63,7 @@ class SecurityController extends AbstractController implements AuthenticatorInte
      */
     public function inscriptionUser()
     {
+        $user = new User();
     }
 
     /**

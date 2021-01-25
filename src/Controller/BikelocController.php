@@ -24,11 +24,19 @@ class BikelocController extends AbstractController
         return $this->render('bikeloc/Vehicules.html.twig');
     }
 
-        /**
+    /**
      * @Route("/produit", name="produit")
      */
     public function produit()
     {
         return $this->render('bikeloc/produit.html.twig');
+    }
+
+    /**
+     * @Route("/panier", name="panier")
+     */
+    public function panier()
+    {
+        return $this->render('bikeloc/panier.html.twig');
     }
 }

@@ -30,8 +30,13 @@ p {
     margin-top: 24px;
 }
 
-.erudit-p{
+.erudit-p {
     margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.erudit-p-0 {
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
@@ -88,6 +93,11 @@ label {
     font-size: 24px;
 }
 
+.erudit-titre-h6 {
+    font-weight: 700!important;
+    color: #343d48;
+}
+
 .img-erudit {
     background-color: #fff;
     border-radius: 10px;
@@ -100,12 +110,12 @@ label {
     height: 50px;
 }
 
-.erudit-space-25{
+.erudit-space-25 {
     width: 0px;
     height: 25px;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: #404040;
     font-family: 'gilroy-bold', arial, sans-serif;
@@ -113,7 +123,49 @@ h4{
     font-weight: 400;
 }
 
-.erudit-center{
-    
+.erudit-card-mini {
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    /* min-height: 250px; */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 11px 14px 1px rgba(5, 124, 175, .1);
+    background-color: white;
+    transition: all .2s ease-in-out;
+    margin-bottom: 30px;
 }
 
+.erudit-card-mini:hover {
+    transform: scale(1.05);
+}
+
+.pricing-erudit-card {
+    color: #42baf4;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.erudit-simple-button {
+    text-transform: none;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    background: 0 0;
+    color: #343d48;
+    font-weight: 500;
+    line-height: 37px;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    padding: 6px 12px;
+    transition: all .2s ease-in-out;
+}
+
+.erudit-simple-button:hover {
+    transform: scale(1.05);
+    border: 1px solid #42baf4;
+    color: #42baf4;
+}
