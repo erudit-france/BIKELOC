@@ -169,3 +169,20 @@ h4 {
     border: 1px solid #42baf4;
     color: #42baf4;
 }
+.erudit-reserver{
+    background: linear-gradient(45deg, rgba(0, 147, 210, 1) 0%, rgba(45, 171, 225, 1) 100%);
+    width: 100%;
+    height: 55px;
+    font-weight: 600;
+    box-shadow: 0 11px 14px 1px rgba(5, 124, 175, .1);
+    border-radius: 6px;
+    text-transform: none;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+  }
+  .erudit-reserver:hover {
+    transform: scale(1.05);
+  }
+  
