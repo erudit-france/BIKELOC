@@ -78,17 +78,17 @@ class SecurityController extends AbstractController implements AuthenticatorInte
      */
     public function connexion(SessionInterface $session, $_route)
     {
-        // $user = new User();
-        // $form = $this->createFormBuilder($user)
-        // ->add('email')
-        // ->add('password', PasswordType::class)
-        // ->add('Connexion', SubmitType::class, [
-        //     'attr' => [
-        //         'class' => 'btn btn-primary'
-        //     ]
-        // ])
-        // ->getForm();
-        // $form->handleRequest($requete);
+        $user = new User();
+        $form = $this->createFormBuilder($user)
+        ->add('email')
+        ->add('password', PasswordType::class)
+        ->add('Connexion', SubmitType::class, [
+            'attr' => [
+                'class' => 'btn btn-primary'
+            ]
+        ])
+        ->getForm();
+        $form->handleRequest($requete);
 
         return $this->render(
             'guide/connexion.html.twig'
