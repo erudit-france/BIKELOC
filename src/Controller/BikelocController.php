@@ -41,10 +41,20 @@ class BikelocController extends AbstractController
     }
     
     /**
+     * @Route("/services", name="services")
+     */
+    public function services()
+    {
+        return $this->render('bikeloc/services.html.twig');
+    }
+
+    /**
      * @Route("/checkCommande", name="checkCommande")
      */
     public function checkCommande()
     {
         return $this->render('bikeloc/checkCommande.html.twig');
     }
+
+
 }

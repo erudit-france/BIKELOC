@@ -1,0 +1,128 @@
+{% extends "bikeloc/Vehicules.html.twig"%}
+{% block cssSpe %}
+    <link rel="stylesheet" href="{{ asset('/assets/css/p-services.css') }}">
+{% endblock %}
+{% block body %}
+    {% block backgroundSpe %}
+        <section class="hero-wrap hero-wrap-2 js-fullheight background-erudit" data-stellar-ratio="0.5"
+                 style="background-image: url(/assets/imagesBIKELOC/banner-biokeloc.jpg)">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+
+
+                    <div class="col-md-11 ftco-animate pb-5">
+                        <h1 class="mb-4 erudit-title">Location de 2 à 24 mois</h1>
+                        <p>
+					<span class="mr-1">
+						<a href="{{ path('bikeloc') }}">Accueil →
+							<i class="ion-ios-arrow-forward"></i>
+						</a>
+					</span>
+                            <span style="color: cadetblue;">Location de 2 à 24 mois
+						<i class="ion-ios-arrow-forward"></i>
+					</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
+
+    <section class="ftco-section bg-light">>
+        <div class="container">
+            <div class="row" >
+                <div class="col-5">
+                    <div>
+                        <div>Des locations allant de 2 à 24 mois</div>
+                        <br/>
+                        <div>Bikeloc répond aux besoins de ses consommateurs B2C et B2B au quotidien avec des locations de courtes durées allant de 1 à 28 jours.</div>
+                        <br/>
+                        <div>
+                            Car la conduite d’un deux roues est une véritable expérience qui change votre quotidien, nous vous proposons également d’avoir accès à notre flotte via 2 autres types de contrats :
+                        </div>
+                    </div>
+                    <div>
+                        <p>→ La Location de Moyenne Durée (2 à 6 mois)</p>
+                        <P>→ La Location de Longue Durée (7 à 24 mois)</P>
+                    </div>
+
+                    <div>
+                        <p>Demande d’informations </p>
+                        <p>lease@bikeloc.fr.<p>
+                        <p> Voir Conditions Générales de Location</p>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div>
+                        <p>La location de Moyenne Durée (LMD)</p>
+                        <div>
+                            La location scooter moyenne durée est comprise entre 2 et 6 mois. Celle-ci est donc destinée aux particuliers et aux professionnels, même sans conditions de revenus.
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>Qu’est ce que la Location Moyenne Durée ?</p>
+                        <div>
+                            Nous sommes donc continuellement à la recherche de solutions innovantes et que la satisfaction de vos besoins est notre priorité, Bikeloc vous propose un service de Location Moyenne Durée.
+                        </div>
+                    </div>
+                    <div>
+                        <p>Qu’est ce que c’est?</p>
+                        <ul class="list-group">
+                            <li class="">Un service accessible aux particuliers et aux professionnels sans conditions de revenus.</li>
+                            <li class="">L’opportunité de souscrire à un contrat de location pour une durée comprise entre 2 à 6 mois.</li>
+                            <li class="">Un tarif préférentiel et avantageux, dégressif selon la durée déterminée de votre location.</li>
+                            <li class="">Des services compris dans le tarif de votre location : assurance tout risque, entretien du véhicule, etc.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Les services compris dans la LMD et fournis par Bikeloc</p>
+                        <ul class="list-group">
+                            <li class="">Des véhicules récents</li>
+                            <p>Bikeloc met à votre disposition des scooters et motos récents. Notre flotte est composée de derniers modèles (2019) conçus par les plus grands constructeurs.</p>
+                            <li class="">Un entretien de votre véhicule à notre charge :</li>
+                            <li class="">Une assurance tout risque*.</li>
+                            <li class="">Un service de dépannage et de remorquage 7/7 et 24/24.</li>
+                            <li class="">La mise à disposition possible d’un véhicule de remplacement en cas de problème.</li>
+                            <li class="">Des accessoires fournis : casque, gants, antivol, jupe de protection, etc.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p>A qui s’adresse l’offre de Location Moyenne durée ?</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block javascripts %}
+
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                    stroke="#F96D00" />
+        </svg>
+    </div>
+    <script src="{{ asset('/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery-migrate-3.0.1.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/aos.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.animateNumber.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.timepicker.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/scrollax.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/main.js') }}"></script>
+{% endblock %}
