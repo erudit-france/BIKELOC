@@ -22,12 +22,13 @@ use Symfony\Component\Security\Http\Authenticator\Passport\UserPassportInterface
 use Symfony\Component\Security\Http\Authenticator\Token\PostAuthenticationToken;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class SecurityController extends AbstractController implements AuthenticatorInterface
 {
-
-
     private $userRepository;
+    private $googleID = "338533409329-qilrbipceigee7lokapbrjqdljob01mi.apps.googleusercontent.com";
+    private $googleCODE = "FDuvqLQcuBS7xy4PmpHjNyRl";
 
     public function __construct(userRepository $userRepository)
     {
@@ -38,22 +39,8 @@ class SecurityController extends AbstractController implements AuthenticatorInte
     /**
      * @Route("/inscription", name="inscription")
      */
-    public function inscription(Request $requete, PersistenceManagerRegistry $managerRegistry)
+    public function inscription()
     {
-        // $user = new User();
-        // if ($form->isSubmitted() && $form->isValid()) {
-        //     $pseudo = $user->getUsername();
-        //     $email = $user->getEmail();
-        //     dump($pseudo);
-        //     dump($email);
-        //     $user->setRoles(['ROLE_USER']);
-        //     $user->setPassword($user->algoCryptage($user->getPassword()));
-        //     $manager = $managerRegistry->getManager();
-        //     $manager->persist($user);
-        //     $manager->flush();
-        //     $this->get('session')->getFlashBag()->add('succès', 'Compte créé!');
-        //     return $this->redirectToRoute('connexionGuide');
-        // }
         return $this->render('security/inscription.html.twig');
     }
 
@@ -61,9 +48,35 @@ class SecurityController extends AbstractController implements AuthenticatorInte
     /**
      * @Route("/inscriptionUser", name="inscriptionUser", methods={"POST"})
      */
-    public function inscriptionUser()
+    public function inscriptionUser(Request $request, PersistenceManagerRegistry $managerRegistry)
     {
-        $user = new User();
+        $retourErreur = array();
+        $form = json_decode(json_decode($request->request->get("PARAM"))->{'x'}->{'form'});
+        $submittedToken = $form->token;
+        $jsonData = new JsonData();
+        if(!filter_var($form->email, FILTER_VALIDATE_EMAIL)) {
+            $retourErreur[] = 'email';
+            $jsonData->setData($retourErreur);
+            $jsonData->setCode(2);
+            $jsonData->setMessage("Erreur email invalide !");
+            return new JsonResponse(json_encode($jsonData->jsonSerialize()));
+        }
+        if ($this->isCsrfTokenValid('delete-item', $submittedToken)) {
+            $user = new User();
+            $user->setRoles(['ROLE_USER']);
+            $user->setName($form->prenom);
+            $user->setUsername($form->nom);
+            $user->setPhone($form->telephone);
+            $user->setEmail($form->email);
+            $user->setPassword($user->algoCryptage($form->password));
+            $manager = $managerRegistry->getManager();
+            $manager->persist($user);
+            $manager->flush();
+            $jsonData->setData(null);
+            $jsonData->setCode(1);
+            $jsonData->setMessage("Enregistrement réussi vous allez être redirigés sur votre compte !");
+        }
+        return new JsonResponse(json_encode($jsonData->jsonSerialize()));
     }
 
     /**
@@ -203,5 +216,38 @@ class SecurityController extends AbstractController implements AuthenticatorInte
     {
         $this->get('session')->getFlashBag()->add('erreur', 'Informations invalide!');
         return $this->redirectToRoute('connexion');
+    }
+}
+
+class JsonData
+{
+    private $code;
+    private $data;
+    private $message;
+
+
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+    public function setData($data)
+    {
+        $this->data = $data;
+    }
+
+    public function setMessage($message)
+    {
+        $this->message = $message;
+    }
+
+    public function jsonSerialize()
+    {
+        return
+            [
+                'code'   => $this->code,
+                'data' => $this->data,
+                'message' => $this->message,
+            ];
     }
 }

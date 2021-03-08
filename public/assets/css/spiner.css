@@ -1,0 +1,375 @@
+#head{
+    height: 10em;
+  }
+  #titulo{
+    font-size: 3em;
+    color:white;
+  }
+  
+  .col-sm-6 .col-md-3{
+    height: 8em;
+  }
+  .item{
+    text-align: center;
+  }
+  
+  .dot{
+    width:  20px;
+    height: 20px;
+    background-color: grey;
+    display: inline-block;
+    margin-top: 40px;
+    border-radius: 50%;    
+    
+  }
+  
+  #dot1{
+     animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulsate {
+      0% {
+        transform: scale(.1);
+        opacity: 0.0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+  }
+  #dot2{
+     animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.2s;
+  }
+  #dot3{
+     animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.4s;
+  }
+  #dot4{
+     animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.6s;
+  }
+  #dot5{
+     animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.8s;
+  }
+  
+  
+  @keyframes boing{
+    0%, 100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      transform: translateY(-30px);
+      animation-timing-function: ease-in;
+      opacity: 0.5;
+    }
+    
+  }
+  #dot6{
+      animation: boing 1s infinite;
+  }
+  #dot7{
+      animation: boing 1s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.2s;
+  }
+  #dot8{
+      animation: boing 1s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.4s;
+  }
+  #dot9{
+      animation: boing 1s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.6s;
+  }
+  #dot10{
+      animation: boing 1s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.8s;
+  }
+  
+  @keyframes tada{
+    0% {
+      transform: translateX(-30px);
+      animation-timing-function: ease-out;
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0px);
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    100%{
+       transform: translateX(30px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    
+  }
+  #dot15{
+      animation: tada 2s ease-out;
+      animation-iteration-count: infinite;
+  }
+  #dot14{
+      animation: tada 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.2s;
+  }
+  #dot13{
+      animation: tada 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.4s;
+  }
+  #dot12{
+      animation: tada 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.6s;
+  }
+  #dot11{
+      animation: tada 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.8s;
+  }
+  
+  
+  
+  /* Bubbles */
+  #dot16 {
+    animation: bubbly 1.2s infinite alternate;
+  }
+  
+  #dot17 {
+    animation: bubbly 1.2s infinite alternate;
+      animation-delay: .27s;
+  }
+  #dot18 {
+    animation: bubbly 1.2s infinite alternate;
+    animation-delay: .54s;
+  }
+  #dot19 {
+    animation: bubbly 1.2s infinite alternate;
+    animation-delay: .81s;
+  }
+  
+  
+  
+  @-webkit-keyframes bubbly {
+    0% {
+      width: 6px;
+      height: 6px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+       width: 30px;
+      height: 30px;
+      opacity: 0.1;
+      transform: translateY(-32px);
+    }
+  }
+  @-moz-keyframes bubbly {
+    0% {
+      width: 6px;
+      height: 6px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      width: 30px;
+      height: 30px;
+      opacity: 0.1;
+      transform: translateY(-32px);
+    }
+  }
+  
+  /*-- Spinners de un circulo--*/
+  .spiner {
+      padding: 20px;
+      margin: 0;
+      height: 74px;
+  }
+  .ball,.ball1{
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      margin: 0 auto;
+      -webkit-box-sizing: initial;
+      -moz-box-sizing: initial;
+      box-sizing: initial;
+  }
+   
+   /*-- Círculo exterior --*/
+  .ball {
+      border: 5px solid #6E6E6E;
+      border-top: 5px solid #2E2E2E;
+      border-left: 5px solid #2E2E2E;
+      width: 50px;
+      height: 50px;
+      -webkit-animation: spin 1s infinite linear;
+      -o-animation: spin 1s infinite linear;
+      animation: spin 1s infinite linear;
+  }
+    /*-- Círculo interior --*/
+  .ball1 {
+      border: 5px solid #BDBDBD;
+      border-top: 5px solid #585858;
+      border-left: 5px solid #585858;
+      width: 26px;
+      height: 26px;
+      position: relative;
+      top: -48px;
+      -webkit-animation: spinoff 1s infinite linear;
+      -o-animation: spinoff 1s infinite linear;
+      animation: spinoff 1s infinite linear;
+  }
+  
+  /*-- Animación Spin --*/
+   
+  @-webkit-keyframes spin {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  @-moz-keyframes spin {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+   
+      100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+   
+      100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+   
+  /*-- SpinOff --*/
+   
+  @-webkit-keyframes spinoff {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(-360deg);
+          -moz-transform: rotate(-360deg);
+          -ms-transform: rotate(-360deg);
+          -o-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+      }
+  }
+  @-moz-keyframes spinoff {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(-360deg);
+          -moz-transform: rotate(-360deg);
+          -ms-transform: rotate(-360deg);
+          -o-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+      }
+  }
+  @keyframes spinoff {
+      0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(-360deg);
+          -moz-transform: rotate(-360deg);
+          -ms-transform: rotate(-360deg);
+          -o-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+      }
+  }
+  
+  .spiner {
+      padding: 20px;
+      margin: 0;
+      height: 74px;
+  }
+  .circuloExt,.circuloInt{
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      margin: 0 auto;
+      -webkit-box-sizing: initial;
+      -moz-box-sizing: initial;
+      box-sizing: initial;
+  }
+   
+   /*-- Círculo exterior --*/
+  .circuloExt{
+      border: 5px solid #6E6E6E;
+      width: 50px;
+      height: 50px;
+      animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+  }
+    /*-- Círculo interior --*/
+  .circuloInt{
+      border: 5px solid #BDBDBD;
+      width: 26px;
+      height: 26px;
+      position: relative;
+      top: -48px;
+      animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.5s;
+     
+  }

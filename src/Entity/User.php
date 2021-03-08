@@ -40,9 +40,19 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="array")
+     * @ORM\Column(name="roles", type="string", length=20)
      */
-    private $roles = [];
+    private $roles;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $phone;
 
     public function getId(): ?int
     {
@@ -92,12 +102,12 @@ class User implements UserInterface
 
     public function getRoles(): ?array
     {
-        return $this->roles;
+        return array($this->roles);
     }
 
     public function setRoles(array $roles): self
     {
-        $this->roles = $roles;
+        $this->roles = implode($roles);
 
         return $this;
     }
@@ -124,5 +134,29 @@ class User implements UserInterface
             $user,
             $user->getPassword()
         ));
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(?string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getPhone(): ?string
+    {
+        return $this->phone;
+    }
+
+    public function setPhone(?string $phone): self
+    {
+        $this->phone = $phone;
+
+        return $this;
     }
 }

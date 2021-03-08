@@ -1,11 +1,10 @@
 {% extends 'bikeloc/produit.html.twig' %}
-
 {% block body %}
 <div class="simple-page ftco-degree-bg"></div>
 <section class="ftco-section ftco-no-pt bg-light">
-    <div class="container">
+    <div class="container container-erudit-13">
         <div class="row">
-            <div class="col-12 erudit-space d-flex justify-content-center"></div>
+            <!-- <div class="col-12 erudit-space d-flex justify-content-center"></div>
             <p class="col-12">Bonjour Christopher ABOULIN (vous n’êtes pas Christopher ABOULIN ? Déconnexion)
 
                 À partir du tableau de bord de votre compte, vous pouvez visualiser vos commandes récentes, gérer vos
@@ -73,7 +72,101 @@
                         <h3 class="col-12 pricing-erudit-card d-flex justify-content-center">Déconnexion</h3>
                     </div>
                 </a>
+            </div> -->
+            <!-- <div class="col-12 erudit-space"></div>
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <div class="col-12 erudit-space-25"></div>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-user"></i> Profile</a>
+                    <div class="col-12 erudit-space-25"></div>
+                <a class="nav-link" id="v-pills-Commandes-tab" data-toggle="pill" href="#v-pills-Commandes" role="tab"
+                    aria-controls="v-pills-Commandes" aria-selected="false"><i class="fas fa-shopping-bag"></i>
+                    Commandes</a>
+                    <div class="col-12 erudit-space-25"></div>
+                <a class="nav-link" id="v-pills-Adresses-tab" data-toggle="pill" href="#v-pills-Adresses" role="tab"
+                    aria-controls="v-pills-Adresses" aria-selected="false"><i class="fas fa-truck"></i> Adresses</a>
             </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="container container-erudit-10">
+                        <div class="row justify-content-center">
+                            <div class="col-1"></div>
+                            <p class="col-11">Bonjour Christopher ABOULIN (vous n’êtes pas Christopher ABOULIN ?
+                                Déconnexion)
+
+                                À partir du tableau de bord de votre compte, vous pouvez visualiser vos commandes
+                                récentes, gérer vos
+                                adresses de livraison et de facturation ainsi que changer votre mot de passe et les
+                                détails de votre
+                                compte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    ...</div>
+                <div class="tab-pane fade" id="v-pills-Commandes" role="tabpanel"
+                    aria-labelledby="v-pills-Commandes-tab">commande</div>
+                <div class="tab-pane fade" id="v-pills-Adresses" role="tabpanel" aria-labelledby="v-pills-Adresses-tab">
+                    Adresses</div>
+            </div> -->
+            <div class="col-md-12 erudit-space"></div>
+            <div class="col-md-2">
+                <div class="row">
+                    <button class="col-md-12 erudit-mini-card">
+                        <div class="row">
+                            <svg style="top: 5px;" class="col-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            <p class="col-10 erudit-p-0 d-flex justify-content-start">Commandes</p>
+                        </div>
+                    </button>
+                    <button class="col-md-12 erudit-mini-card">
+                        <div class="row">
+                            <svg style="top: 5px;" class="col-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                            <p class="col-10 erudit-p-0 d-flex justify-content-start">Adresses</p>
+                        </div>
+                    </button>
+                    <button class="col-md-12 erudit-mini-card">
+                        <div class="row">
+                            <svg style="top: 5px;" class="col-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p class="col-10 erudit-p-0 d-flex justify-content-start">Détails du compte</p>
+                        </div>
+                    </button>
+                    <div class="col-12 erudit-space"></div>
+                    <button class="col-md-12 erudit-mini-card">
+                        <div class="row">
+                            <svg style="top: 5px;" class="col-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                <polyline points="16 17 21 12 16 7"></polyline>
+                                <line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            <p class="col-10 erudit-p-0 d-flex justify-content-start">Déconnexion</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="col-10"></div>
         </div>
     </div>
 </section>

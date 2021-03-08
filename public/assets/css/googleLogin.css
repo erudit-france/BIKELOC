@@ -1,0 +1,54 @@
+.open-ids {
+    width: 236px;
+    margin: 0 auto;
+  }
+  
+  .auth-provider {
+     font-family: system-ui,roboto,sans-serif;
+    font-weight: 500;
+     font-size: 16px;
+    line-height: 40px;
+    padding: 0 21px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #d6d9dc;
+    text-align: center;
+    background: #FFF;
+    color: #535a60
+  }
+  
+  .google-login {
+    color: #535a60;
+    border-color: #d6d9dc;
+    transition: all .2s ease-in-out;
+  }
+
+  .google-login:hover {
+    transform: scale(1.05);
+  }
+  
+  .facebook-login {
+    color: #FFF;
+    background-color: #395697;
+    border-color: transparent;
+    transition: all .2s ease-in-out;
+  }
+  .facebook-login:hover {
+    transform: scale(1.05);
+  }
+  .kyber-login {
+    color: #FFF;
+    background-color: #54ae85;
+    border-color: transparent
+  }
+  
+  .telegram-login {
+    margin-bottom: 12px;
+  }
+  
+  .svg-icon {
+    vertical-align: middle;
+    padding-bottom: 4px;
+  }

@@ -1,0 +1,44 @@
+.navbar-erudit {
+    background: rgba(255, 255, 255, 0);
+    z-index: 999999999999;
+}
+
+.navbar-scroll-erudit {
+    background: #fff;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: block;
+    z-index: 999999999999;
+    box-shadow: 0 7px 27px 0 rgb(16 66 97 / 7%);
+    animation-duration: 0.5s;
+    animation-name: slid-down;
+}
+
+@keyframes slid-down {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.navbar-no-scroll-erudit {
+    animation: slid-up 1s;
+}
+
+@keyframes slid-up {
+    from {
+        box-shadow: 0 7px 27px 0 rgb(16 66 97 / 7%);
+        background: rgb(255, 255, 255);
+    }
+    to {
+        box-shadow: 0 7px 27px 0 rgb(16 66 97 / 0%);
+        background: rgba(255, 255, 255, 0);
+    }
+}

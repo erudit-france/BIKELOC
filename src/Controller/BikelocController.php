@@ -13,6 +13,7 @@ class BikelocController extends AbstractController
      */
     public function index(): Response
     {
+        // var_dump(phpinfo());
         return $this->render('bikeloc/index.html.twig');
     }
 
